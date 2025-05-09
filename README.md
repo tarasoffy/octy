@@ -1,63 +1,62 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## 🚀 Getting Started
 
-# Getting Started
-
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
-
-## Step 1: Start the Metro Server
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+### 1. Clone the Repository
 
 ```bash
-# using npm
+git clone https://github.com/tarasoffy/octy.git
+cd octy
+```
+
+## Step 2: Install Dependencies
+
+npm install
+# or
+yarn
+
+## Step 3: Install iOS Pods
+
+cd ios
+pod install
+cd ..
+
+## Step 4: (Optional) Clean Android Build
+
+cd android
+./gradlew clean
+cd ..
+
+## Step 5: Add Environment Variables
+
+Create a .env file in the root directory and add the following:
+
+API_KEY=your_api_key_here
+
+## Step 6: Run the App
+
 npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
 ## Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
+
+## Librarys used
+
+| **Library**                                | **Version**   | **Purpose**                                                                 |
+|--------------------------------------------|---------------|-----------------------------------------------------------------------------|
+| `@react-native-async-storage/async-storage` | ^2.1.2        | Provides an asynchronous key-value storage system for React Native apps.    |
+| `@react-native-community/netinfo`          | ^11.4.1       | Used to check the network state (e.g., if the device is online or offline). |
+| `@react-navigation/bottom-tabs`            | ^6.6.1        | Implements a bottom tab navigation in a React Native app.                   |
+| `@react-navigation/native`                 | ^6.1.18       | Core navigation library for React Native, providing common navigation patterns. |
+| `@react-navigation/stack`                  | ^6.4.1        | Provides stack navigation, used to navigate between screens in a stack-like manner. |
+| `react-native-dotenv`                      | ^3.4.11       | Allows you to manage environment variables in React Native projects.        |
+| `react-native-gesture-handler`             | ^2.18.1       | Enables gesture handling in React Native, such as swipe gestures, drag events, etc. |
+| `react-native-responsive-screen`           | ^1.4.2        | Helps create responsive layouts that adjust based on screen size.          |
+| `react-native-safe-area-context`           | ^4.10.8       | Provides a safe area context, ensuring your app's UI fits within the screen's safe area. |
+| `react-native-screens`                     | ^3.33.0       | Optimizes screen rendering in React Navigation for better performance.      |
+| `react-native-svg`                         | ^15.11.2      | Provides an SVG implementation for React Native to render vector graphics. |
+| `react-native-svg-transformer`             | ^1.5.1        | Allows for SVG imports to be used directly in React Native projects.        |
+| `zustand`                                  | ^5.0.4        | A state management library for React with a simple API and minimal boilerplate. |
+
 
 ### Now what?
 
