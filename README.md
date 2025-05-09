@@ -27,7 +27,9 @@ cd ..
 
 ## Step 5: Add Environment Variables
 
-Create a .env file in the root directory and add the following:
+Use the site api https://swop.cx/
+
+Create a .env file in the root directory and add the following.
 
 API_KEY=your_api_key_here
 
